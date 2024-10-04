@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* styles/globals.css */
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #F7F9FB;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #172554;
+ font-weight: bolder;
+}
+
+.student-card {
+  background-color: #f3e6e5;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(9, 169, 243, 0.4);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(10px);
+}
+
+.student-card img {
+  width: 100%;
+  border: 0.5px solid white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: #070707;
+}
+
+.student-card h2 {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #1f0606;
+  text-align: center;
+}
+
+.student-card p {
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #615959;
+}
