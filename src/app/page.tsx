@@ -40,7 +40,7 @@ const students = [
 export default function Home() {
   return (
     <div className="home w-auto h-20 bg-pink-100 pt-5">
-      <h1 className="title text-center text-bold text-5xl text-transform: uppercase ">Student's ID Card</h1>
+      <h1 className="title text-center text-bold text-5xl text-transform: uppercase ">Students ID Card</h1>
       <div className="student-cards">
         {students.map((student, index) => (
           <StudentCard key={index} student={student} />
